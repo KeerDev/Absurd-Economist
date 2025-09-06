@@ -67,34 +67,60 @@
 
     <p class="lead">Welcome to my tiny lab of poems and short essays. I write about public goods, tiny injustices, and why coffee tastes like regressions.</p>
 
-    <section class="poem">
-Endogenous thirst shocks keep ruining my workflow  
-a marginal sip and the gradient of ideas flattens —  
-I write a theorem on the back of a napkin, then misplace the napkin.
-    </section>
+ <h2>Poems</h2>
 
-    <footer>Tip: to add more poems create new HTML sections or switch to Jekyll for markdown posts.</footer>
-    <section>
-  <h2>Poems</h2>
-  
-  <details>
-    <summary>Endogenous Thirst Shocks</summary>
-    <p>
-      Endogenous thirst shocks keep ruining my workflow.<br>
-      A marginal sip and the gradient of ideas flattens.<br>
-      I write a theorem on the back of a napkin, then misplace the napkin.
-    </p>
-  </details>
+<style>
+  details {
+    margin-bottom: 12px;
+    font-family: 'Nunito', sans-serif;
+  }
 
-  <details>
-    <summary>Regression of Sisyphus</summary>
-    <p>
-      Each month is a boulder,<br>
-      and I, the statistician,<br>
-      roll it up the hill with clustered errors.
-    </p>
-  </details>
-</section>
+  details summary {
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    list-style: none;
+    outline: none;
+  }
+
+  details summary::-webkit-details-marker {
+    display: none; /* removes default triangle */
+  }
+
+  details summary::before {
+    content: "▶ ";
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  details[open] summary::before {
+    transform: rotate(90deg);
+  }
+
+  details p {
+    margin: 6px 0 0 20px; /* indent from summary */
+    line-height: 1.6;
+  }
+</style>
+
+<details>
+  <summary>Endogenous Thirst Shocks</summary>
+  <p>
+    Endogenous thirst shocks keep ruining my workflow.<br>
+    A marginal sip and the gradient of ideas flattens.<br>
+    I write a theorem on the back of a napkin, then misplace the napkin.
+  </p>
+</details>
+
+<details>
+  <summary>Regression of Sisyphus</summary>
+  <p>
+    Each month is a boulder,<br>
+    and I, the statistician,<br>
+    roll it up the hill with clustered errors.
+  </p>
+</details>
+
   </div>
 </body>
 </html>
