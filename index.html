@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Wacky Academia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Special+Elite&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fffef6; --ink:#2b2b2b; --accent:#ff6b6b; --note:#fff3b0;
+    }
+    html,body{height:100%;margin:0;font-family:"Merriweather",serif;background:linear-gradient(180deg, rgba(0,0,0,0.01), transparent);}
+    .paper{max-width:840px;margin:36px auto;padding:36px;background:var(--bg);box-shadow:0 10px 30px rgba(0,0,0,0.08);border-radius:12px;position:relative;overflow:hidden}
+    header{display:flex;align-items:baseline;gap:18px}
+    h1{font-family:"Special Elite",monospace;margin:0;font-size:36px;color:var(--accent);transform:rotate(-1deg)}
+    p.lead{margin:6px 0 18px;color:var(--ink);opacity:.9}
+    .poem{border-left:6px dashed rgba(0,0,0,0.06);padding:14px 18px;background:linear-gradient(90deg, rgba(255,255,255,0.0), rgba(0,0,0,0.01));margin:18px 0;border-radius:8px;white-space:pre-wrap}
+    .note{position:absolute;right:26px;top:26px;background:var(--note);padding:8px 12px;border-radius:6px;transform:rotate(-6deg);box-shadow:0 6px 10px rgba(0,0,0,0.06);font-size:13px}
+    footer{color:#666;font-size:13px;margin-top:20px}
+    a{color:var(--accent);text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="paper">
+    <header>
+      <h1>Your Name</h1>
+      <div>
+        <div style="font-size:12px;color:#666">Wacky academic — poems, notes, and marginalia</div>
+      </div>
+      <div class="note">☕ Endogenous thirst shocks</div>
+    </header>
+
+    <p class="lead">Welcome to my tiny lab of poems and short essays. I write about public goods, tiny injustices, and why coffee tastes like regressions.</p>
+
+    <section class="poem">
+Endogenous thirst shocks keep ruining my workflow  
+a marginal sip and the gradient of ideas flattens —  
+I write a theorem on the back of a napkin, then misplace the napkin.
+    </section>
+
+    <footer>Tip: to add more poems create new HTML sections or switch to Jekyll for markdown posts.</footer>
+  </div>
+</body>
+</html>
